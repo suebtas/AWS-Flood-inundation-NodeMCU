@@ -16,7 +16,7 @@ ActionError actionError;
 DHT dht(DHTPIN, DHTTYPE);
 
 char *ssid="home";
-char *password="XXX";
+char *password="0813060904";
 
 void setup() {
   Serial.begin(115200);
@@ -45,10 +45,10 @@ void setup() {
 
   iotClient.setAWSRegion("ap-southeast-1");
   iotClient.setAWSEndpoint("amazonaws.com");
-  iotClient.setAWSDomain("a3qecgja0623nh-ats.iot.ap-southeast-1.amazonaws.com"); //YOUR REST THING API ENDPOINT
-  iotClient.setAWSPath("/things/NodeMCU/shadow");                                //YOUR THING SHADOW PATH
-  iotClient.setAWSKeyID("AKIAIPVMOF6R5QBAZE3A");                                 //YOUR ACCESS KEY ID
-  iotClient.setAWSSecretKey("ADtoOUB1ahOC1EsqnyQHMkGm2nwPMd18sYTDlizt");         //YOUR SECRET ACCESS KEY
+  iotClient.setAWSDomain(""); //YOUR REST THING API ENDPOINT
+  iotClient.setAWSPath("");                                //YOUR THING SHADOW PATH
+  iotClient.setAWSKeyID("");                                 //YOUR ACCESS KEY ID
+  iotClient.setAWSSecretKey("");        //YOUR SECRET ACCESS KEY
   iotClient.setHttpClient(&httpClient);
   iotClient.setDateTimeProvider(&dateTimeProvider);
 }
